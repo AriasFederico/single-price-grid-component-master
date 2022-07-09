@@ -29,6 +29,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Karla', sans-serif;
+	padding: 2rem;
 }
 
 * {
@@ -37,27 +38,59 @@ body {
 	box-sizing: border-box;
 }
 
+h3 {
+	color: white;
+}
+
 /*----- class -----*/
 
 .container {
-	
+	border-radius: 8px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: "community"
+						 "subscription"
+						 "why";
+}
+
+.block {
+	padding:1.875rem 1.5rem;
 }
 
 /*-----community -----*/
 
 .community {
 	background-color: white;
+	grid-area: community;
 }
 
 .community h2 {
 	color: var(--Cyan);
+	margin-bottom: 2.0625rem;
+}
+
+.community span {
+	display: inline-block;
+	font-weight: 700;
+	color: var(--Bright-Yellow);
+	margin-bottom: 1.875rem;
+}
+
+.community p {
+	line-height: 1.7;
 }
 
 /*----- subscription -----*/
 
 .subscription {
-	background-color:var(--Cyan) ;
+	background-color:var(--Cyan);
+	grid-area: subscription;
 }
 
 /*----- why us -----*/
 
+.why {
+	grid-area:why ;
+}
