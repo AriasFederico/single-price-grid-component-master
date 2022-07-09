@@ -23,7 +23,7 @@ html {
 body {
 	background-color: var(--Light-Gray);
 	font-size: 16;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -66,7 +66,7 @@ h3 {
 	grid-area: community;
 }
 
-.community h2 {
+.community h3 {
 	color: var(--Cyan);
 	margin-bottom: 2.0625rem;
 }
@@ -79,7 +79,9 @@ h3 {
 }
 
 .community p {
+	color: var(--GrayishwBlue);
 	line-height: 1.7;
+	font-size: 0.875rem;
 }
 
 /*----- subscription -----*/
