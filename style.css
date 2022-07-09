@@ -3,6 +3,7 @@
 :root {
 	/*primary*/
 	--Cyan: hsl(179, 62%, 43%); /*azulcito*/
+	--Light-cyan:hsl(179, 47%, 52%) ;
 	--Bright-Yellow: hsl(71, 73%, 54%); /*btn*/
 	/*neutral*/
 	--Light-Gray: hsl(204, 43%, 93%); /*gris*/
@@ -91,8 +92,60 @@ h3 {
 	grid-area: subscription;
 }
 
+.subscription h3 {
+	margin-bottom: 1.6rem;
+}
+
+.subscription p {
+	color: white;
+	margin-bottom: 2.0625rem;
+}
+
+.flex {
+	margin: 0 0 .5rem 0;
+	display: flex;
+	align-items: center;
+}
+
+.flex span {
+	color: white;
+	margin-right: 1rem;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.flex p {
+	margin: 0;
+	color: var(--Light-Gray);
+}
+
+.btn {
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 700;
+	color: white;
+	background-color: var(--Bright-Yellow);
+	width: 100%;
+	padding: 1rem 0 ;
+	border: none;
+	border-radius: 8px;
+}
+
 /*----- why us -----*/
 
 .why {
 	grid-area:why ;
+	background-color: var(--Light-cyan);
 }
+
+.why h3 {
+	margin-bottom: 1.75rem;
+}
+
+.why p {
+	padding-right: 5.3rem;
+	font-size: 0.875rem;
+	color: var(--Light-Gray);
+	line-height: 1.7;
+}
+
