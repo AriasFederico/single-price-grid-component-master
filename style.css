@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+	/*primary*/
+	--Cyan: hsl(179, 62%, 43%); /*azulcito*/
+	--Bright-Yellow: hsl(71, 73%, 54%); /*btn*/
+	/*neutral*/
+	--Light-Gray: hsl(204, 43%, 93%); /*gris*/
+	--GrayishwBlue: hsl(218, 22%, 67%); /*gris oscuro*/
+}
+
+/*fonts weights 400,700*/
+
+/*----- globals -----*/
+
+html {
+	min-width: 375px;
+	max-width: 1440px;
+	margin: auto;
+	font-size: 100%;
+}
+
+body {
+	background-color: var(--Light-Gray);
+	font-size: 16;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Karla', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*----- class -----*/
+
+.container {
+	
+}
+
+/*-----community -----*/
+
+.community {
+	background-color: white;
+}
+
+.community h2 {
+	color: var(--Cyan);
+}
+
+/*----- subscription -----*/
+
+.subscription {
+	background-color:var(--Cyan) ;
+}
+
+/*----- why us -----*/
+
