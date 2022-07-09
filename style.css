@@ -120,6 +120,7 @@ h3 {
 }
 
 .btn {
+	cursor: pointer;
 	font-family: inherit;
 	font-size: 1rem;
 	font-weight: 700;
@@ -128,7 +129,8 @@ h3 {
 	width: 100%;
 	padding: 1rem 0 ;
 	border: none;
-	border-radius: 8px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px gray;
 }
 
 /*----- why us -----*/
@@ -149,3 +151,38 @@ h3 {
 	line-height: 1.7;
 }
 
+/*----- media querie -----*/
+
+@media (min-width: 37.5rem){
+
+	.container {
+		max-width: 41rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "community community"
+							 "subscription why"
+	}
+
+	.block {
+		padding: 1.875rem 2.625rem;
+	}
+
+	/*----- community -----*/
+
+	.community h3 {
+		font-size: 1.5rem;
+	}
+
+	.community span {
+		font-size: 1.1rem;
+	}
+
+	.community p {
+		font-size: 1rem;
+	}
+
+	/*----- why -----*/
+
+	.why p{
+		padding-right: 3rem;
+	}
+}
